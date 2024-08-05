@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Compra</title>
+    <link rel="icon" href="Imagens/order_16134552.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulário de Compra</h1>
+        <form>
+            <!-- Campo de Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <!-- Campo de Telefone -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+
+            <!-- Campo de CPF -->
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+
+            <!-- Campo de Produto -->
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto" required>
+                <option value="" disabled selected>Selecione um produto</option>
+                <option value="produto1">Shanppo</option>
+                <option value="produto2">Condicionar</option>
+                <option value="produto3">Creme de Cabelo</option>
+                <option value="produto4">Sabonete</option>
+                <option value="produto5">Qboa</option>
+            </select>
+
+            <!-- Campo de Tipo de Pessoa -->
+            <label for="tipoPessoa">Tipo de Pessoa:</label>
+            <select id="tipoPessoa" name="tipoPessoa" required>
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+            </select>
+
+            <!-- Botões de Ação -->
+            <div class="buttons">
+                <button type="submit" class="btn salvar">Salvar</button>
+                <button type="reset" class="btn excluir">Excluir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2ebf91, #8360c3); /* Fundo gradiente colorido */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container do formulário */
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+    /* Estilo do título do formulário */
+    .form-container h1 {
+        text-align: center;
+        color: #2ebf91;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+/* Estilos dos rótulos dos campos */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Estilos dos campos de entrada de texto e seleção */
+form input[type="text"],
+form input[type="tel"],
+form select {
+    width: calc(100% - 20px); /* Ajusta o campo para preencher o container */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+    /* Mudança de cor da borda e sombra ao focar nos campos */
+    form input[type="text"]:focus,
+    form input[type="tel"]:focus,
+    form select:focus {
+        border-color: #2ebf91;
+        box-shadow: 0 0 8px rgba(46, 191, 145, 0.3);
+    }
+
+/* Estilos dos botões */
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 5px;
+}
+
+/* Estilos do botão de salvar */
+.salvar {
+    background-color: #2ebf91;
+    color: #fff;
+}
+
+/* Estilos do botão de excluir */
+.excluir {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Efeito de hover para os botões */
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
